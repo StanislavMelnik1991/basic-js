@@ -17,7 +17,7 @@ function getSeason(date) {
   if (date === undefined){
     return 'Unable to determine the time of year!'
   }
-  if(date instanceof Date){
+  if(date instanceof Date&&(Object.keys(date).length == 0)){
     
     let tmp = date.getMonth()+1
     console.log(tmp)
